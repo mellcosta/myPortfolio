@@ -17,7 +17,7 @@ Welsome to my personal portfolio updated for the year of 2025.
 - Smooth animations and modern UI/UX
 
 🚀 Get Started
-Feel free to explore the live version of my portfolio here.
+Feel free to explore the live version of my portfolio [here](https://my-portfolio-mellcostas-projects.vercel.app/).
 
 📬 Let’s connect! [LinkedIn](https://www.linkedin.com/in/melissa-costa-71300a209/)
 
