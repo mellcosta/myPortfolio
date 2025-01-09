@@ -37,7 +37,6 @@ const Navbar = () => {
                 <li className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-orange-500 hover:opacity-100">
                     <BsGithub/>
                 </li>
-
             </ul>
 
             {isOpen ? (
@@ -72,7 +71,6 @@ const Navbar = () => {
                         <li className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-orange-500 hover:opacity-100">
                             <BsGithub/>
                         </li>
-
                     </ul>
                 </div> 
             )}
