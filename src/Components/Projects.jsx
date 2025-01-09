@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { motion } from "motion/react"
 import image from "/public/rocketflix.png"
 

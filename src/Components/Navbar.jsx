@@ -31,12 +31,12 @@ const Navbar = () => {
             </ul>
 
             <ul className="hidden md:flex gap-5">
-                <li className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-blue-500 hover:opacity-100">
-                    <BsLinkedin/>
-                </li>
-                <li className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-orange-500 hover:opacity-100">
-                    <BsGithub/>
-                </li>
+                <a href="https://www.linkedin.com/in/melissa-costa-71300a209/" className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-blue-500 hover:opacity-100">
+                   <li><BsLinkedin/></li> 
+                </a>
+                <a className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-orange-500 hover:opacity-100">
+                    <li><BsGithub/></li> 
+                </a>
             </ul>
 
             {isOpen ? (
