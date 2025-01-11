@@ -1,37 +1,71 @@
 import { motion } from "motion/react"
-import image from "/public/rocketflix.png"
+import rocketflix from "../../public/projects/rocketflixEn.png"
+import spotify from "../../public/projects/spotify.png"
+import igniteFeed from "../../public/projects/igniteFeed.png"
+import devLinks from "../../public/projects/devLinks.jpg"
+import igniteLds from "../../public/projects/ignite-lds.png"
+import loginPage from "../../public/projects/loginPage.png"
+import portfolio from "../../public/projects/portfolio.png"
+import countdown from "../../public/projects/countdown.png"
 
 const projectsData = [
     {
-        image:image,
-        title: "Habit Tracker",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo unde quae quibusdam sit hic ex, a odio rerum nostrum doloremque enim. Sed, sint qui. Deserunt voluptatem nemo beatae nostrum. Expedita.",
-        technologies:["HTML","CSS", "Javascript"],
+        image:rocketflix,
+        title: "Rocketflix",
+        description: "If you don't know what to watch, the solution is Rocketflix: a movie finder which provides information about a movie when you click 'Find Movie'.",
+        technologies:["HTML","SASS", "Javascript"],
+        link: "https://mellcosta.github.io/desafiosRocketseat/avancado/rocketflix/rocketflix.html",
     },
     {
-        image:image,
-        title: "Habit Tracker",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo unde quae quibusdam sit hic ex, a odio rerum nostrum doloremque enim. Sed, sint qui. Deserunt voluptatem nemo beatae nostrum. Expedita.",
-        technologies:["HTML","CSS", "Javascript"],
+        image:spotify,
+        title: "Spotify Clone",
+        description: "This is a clone of Spotify website made using Tailwind and Next.js",
+        technologies:["Next.js","Tailwind", "Typescript"],
+        link: "https://spotify-cyan-chi.vercel.app/",
     },
     {
-        image:image,
-        title: "Habit Tracker",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo unde quae quibusdam sit hic ex, a odio rerum nostrum doloremque enim. Sed, sint qui. Deserunt voluptatem nemo beatae nostrum. Expedita.",
-        technologies:["HTML","CSS", "Javascript"],
+        image:igniteFeed,
+        title: "Ignite Feed",
+        description: "Ignite feed  is a simlpe project which simulates your social media feed, with features like comment, likes and delete comments.",
+        technologies:["React.js","Vite", "Date-fnt", "Phosphor-react", "React DOM"],
+        link: "https://spotify-cyan-chi.vercel.app/",
     },
     {
-        image:image,
-        title: "Habit Tracker",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo unde quae quibusdam sit hic ex, a odio rerum nostrum doloremque enim. Sed, sint qui. Deserunt voluptatem nemo beatae nostrum. Expedita.",
-        technologies:["HTML","CSS", "Javascript"],
+        image:devLinks,
+        title: "Dev Links",
+        description: "DevLinks is a link aggregator designed to be used as an online business card.",
+        technologies:["Figma", "HTML","CSS", "Javascript"],
+        link: "https://mellcosta.github.io/DevLinks/" , 
     },
     {
-        image:image,
-        title: "Habit Tracker",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo unde quae quibusdam sit hic ex, a odio rerum nostrum doloremque enim. Sed, sint qui. Deserunt voluptatem nemo beatae nostrum. Expedita.",
-        technologies:["HTML","CSS", "Javascript"],
+        image:igniteLds,
+        title: "Ignite Lab Design System",
+        description: "A design system developed at Ignite Lab marathon 3 by Rocketseat",
+        technologies:["Typescript", "Postcss", "Autoprefixer", "Storybook", "Tailwind"],
+        link: "https://mellcosta.github.io/ignite_lab_design_system/?path=/story/components-button--default",
     },
+    {
+        image:loginPage,
+        title: "Login Page",
+        description: "This a simulation of a login page.",
+        technologies:["HTML","CSS", "Javascript",],
+        link: "https://mellcosta.github.io/desafiosRocketseat/intermediario/login/login.html" ,
+    },
+    {
+        image:portfolio,
+        title: "Portfolio",
+        description: "The previous portfolio site I designed and developed by my own.",
+        technologies:["React.js","Next.js", "Tailwind", "Figma"],
+        link: "https://portfolio-mellcosta.vercel.app/",
+    },
+    {
+        image:countdown,
+        title: "Countdown",
+        description: "This is a countdown challane project promoted by Rocketseat.",
+        technologies:["HTML","CSS", "Javascript"],
+        link: "https://mellcosta.github.io/desafiosRocketseat/intermediario/countdown/countdown.html",
+    },
+    
 ]
 
 const ScrollReveal = ({children}) => {
@@ -51,7 +85,8 @@ const ProjectCard = ({project}) => {
     return (
         <ScrollReveal>
             <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24 " >
-                <img src={project.image} alt="" className=" cursor-pointer w-full rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px] " />
+                <a href={project.link} target="_blank" className=" min-w-[300px]">
+                <img src={project.image} alt="project image" className=" cursor-pointer w-full h-[200px]  rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px] " /></a>
 
                 <div className="flex flex-col gap-5">
 
