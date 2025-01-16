@@ -31,10 +31,10 @@ const Navbar = () => {
             </ul>
 
             <ul className="hidden md:flex gap-5">
-                <a href="https://www.linkedin.com/in/melissa-costa-71300a209/" className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-blue-500 hover:opacity-100">
+                <a href="https://www.linkedin.com/in/melissa-costa-71300a209/" target="_blank" className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-blue-500 hover:opacity-100">
                    <li><BsLinkedin/></li> 
                 </a>
-                <a className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-orange-500 hover:opacity-100">
+                <a href="https://github.com/mellcosta" target="_blank" className=" cursor-pointer opacity-70 transition-all duration-300 text-xl hover:text-orange-500 hover:opacity-100">
                     <li><BsGithub/></li> 
                 </a>
             </ul>
@@ -56,8 +56,8 @@ const Navbar = () => {
                         <a href="#tech" className=" cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
                             <li>Tech</li>
                         </a>
-                        <a href="#project" className=" cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
-                            <li className="cursor-pointer">Project</li>
+                        <a href="#projects" className=" cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+                            <li className="cursor-pointer">Projects</li>
                         </a>
                         <a href="#contact" className=" cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
                             <li>Contact</li>
