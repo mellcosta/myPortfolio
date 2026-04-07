@@ -1,9 +1,9 @@
-import profile from "../../public/profilePic1.jpg"
+import profile from "/profilePic.jpeg";
 import { motion } from "motion/react";
 
 const Hero = () => {
     return (
-        <div id="home" className="px-16 flex min-h-screen w-full items-center justify-center py-28 md:px-32 " >
+        <div id="home" className="px-16 flex min-h-screen w-full items-center justify-center mt-5 py-28 md:px-32 " >
             <div className="flex flex-col items-center justify-center gap-10 text-white ">
                 <motion.div
                     initial={{y:-50, opacity: 0}}
@@ -12,7 +12,7 @@ const Hero = () => {
                 >
                     <img src={profile} 
                         alt="Melissa Costa profile picture"
-                        className="w-[300px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 ms:w-[350px] "
+                        className="w-[200px] h-[200px] cursor-pointer rounded-full object-cover shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 ms:h-[300px] ms:w-[300px] md:h-[350px] md:w-[350px] "
                      />
                 </motion.div>
 
