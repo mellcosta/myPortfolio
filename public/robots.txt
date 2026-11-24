@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://melissa-portfolio-nu.vercel.app/sitemap.xml

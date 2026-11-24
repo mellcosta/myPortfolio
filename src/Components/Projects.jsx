@@ -86,12 +86,12 @@ const ProjectCard = ({project}) => {
         <ScrollReveal>
             <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24 " >
                 <a href={project.link} target="_blank" className=" min-w-[300px]">
-                <img src={project.image} alt="project image" className=" cursor-pointer w-full h-[200px]  rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px] " /></a>
+                <img src={project.image} alt={`Screenshot of the ${project.title} project`} className=" cursor-pointer w-full h-[200px]  rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px] " /></a>
 
                 <div className="flex flex-col gap-5">
 
                     <div className="flex flex-col gap-3">
-                        <div className="text-xl font-semibold" > {project.title} </div>
+                        <h3 className="text-xl font-semibold" > {project.title} </h3>
                         <p className="text-gray-400" > {project.description} </p>
                     </div>
 
@@ -114,7 +114,7 @@ const Projects = () => {
     return (
         <div id="projects" className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 md:py-24" >
             <ScrollReveal>
-                <h1 className="text-4xl font-light text-white md:text-6xl" >My Projects</h1>
+                <h2 className="text-4xl font-light text-white md:text-6xl" >My Projects</h2>
             </ScrollReveal>
 
             <div className=" flex flex-col w-full max-w-[1000px] gap-16 text-white " >

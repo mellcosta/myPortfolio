@@ -26,9 +26,9 @@ const Hero = () => {
                     <h1 className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-5xl font-light md:text-7xl " >
                         Melissa Costa
                     </h1>
-                    <h3 className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-2xl font-light md:text-3xl ">
+                    <h2 className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-2xl font-light md:text-3xl">
                         Frontend Developer
-                    </h3>
+                    </h2>
                     <p className="md:text-base text-pretty text-sm text-gray-400 " >
                         I’m a frontend developer skilled in React.js, Next.js, and Tailwind, focused on building dynamic, clean and user-friendly experiences. I also enjoy working with Figma to create designs and bring other people’s designs to life. Let’s create something awesome together!
                     </p>

@@ -11,13 +11,13 @@ const Tech = () => {
 
     return (
         <div id="tech" className="flex min-h-[70vh] w-full flex-col items-center justify-center gap-16 md:gap-32 " >
-            <motion.h1 
+            <motion.h2 
                 variants={variants}
                 initial="hidden"
                 whileInView="visible"
                 transition={{duration:0.5}}
                 className="text-4xl font-light text-white md:text-6xl " 
-            >Technologies</motion.h1>
+            >Technologies</motion.h2>
 
             <ul className="flex flex-wrap items-center justify-center gap-10 p-5 ">
                 <motion.li 
